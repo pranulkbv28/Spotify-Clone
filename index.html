@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone </title>
+</head>
+<body>
+    <section>
+        <div class="fixed-container">
+            <div class="menu">
+                <a class="active" href="index.html">
+                    <p class="menu-tags">
+                        <svg class="active tags" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="gray" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                        </svg> <span class="first">Home</span>
+                    </p>
+                </a>
+                <a href="#">
+                    <p class="menu-tags">
+                        <svg class="tags" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="gray" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg> <span class="second">Search</span>
+                    </p>
+                </a>
+            </div>
+            <div class="library">
+                <div class="fit">
+                    <div class="library-heading-flex">
+                        <a class="lib-anch" href="#">
+                            <div class="lib-flex">
+                                <svg class="lib-icon" width="24" height="24" aria-hidden="true" class="Svg-sc-ytk21e-0 haNxPq" data-encore-id="icon" role="img" viewBox="0 0 24 24">
+                                    <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"/>
+                                  </svg> <span class="lib">Your Library</span>
+                            </div>
+                        </a>
+                        <div class="crt-playlist">
+                            <button class="playlist">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq">
+                                    <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z" fill="gray">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="opt">
+                    <div class="opt1">
+                        <h3>
+                            Create your first playlist
+                        </h3>
+                        <p>
+                            It's easy, we'll help you
+                        </p>
+                        <button class="">
+                            Create Playlist
+                        </button>
+                    </div>
+                    <div class="opt2">
+                        <h3>
+                            Let's find some podcasts to follow
+                        </h3>
+                        <p>
+                            We'll keep you updated on new episodes
+                        </p>
+                        <a href="#">
+                            <button class="">
+                                Browse podcasts
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="cookies">Cookies</a>
+                <br>
+                <div class="lang">
+                    <a href="#" class="lang-flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-globe" viewBox="0 0 16 16">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                    </svg> <span>English</span> </a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="main">
+             <div class="fit">                               <!-- this is to fit the navbar into the main div -->
+                <div class="navbar-flex">
+                    <div class="nav">
+                        <svg class="nav-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                        <svg class="nav-btn" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                    <div class="small">
+                        <a href="#">
+                            <img class="logo" src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="deets">
+                        <a href="signup.html">
+                            <div class="sign">
+                                Sign up
+                            </div>
+                        </a>
+                        <a href="login.html">
+                            <div class="login">
+                                Log in
+                        </div>
+                        </a>
+                    </div>
+                    <div class="small-unset">
+                        <div class="small-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                            <div class="app-link">
+                                <a href="#">
+                                    OPEN APP
+                                </a>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card-container">
+                    <div class="head">
+                        <h2 class="play-name">
+                            <a class="list-name" href="#">
+                                Focus
+                            </a>
+                        </h2>
+                        <a class="show" href="#">
+                            Show all
+                        </a>
+                    </div>
+                    <div class="card-flex">
+                        <a href="Focus/piano.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Focus/peaceful piano.avif" alt="peaceful piano">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                    
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Peaceful Piano
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Peaceful Piano
+                                    </h3>
+                                    <p>
+                                        Peaceful piano to help you slow down, breathe, and relax.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Focus/deepfocus.html" class="">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Focus/deep focus.avif" alt="deep focus">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Deep Focus
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Deep Focus
+                                    </h3>
+                                    <p>
+                                        Keep calm and focus with ambient and post-rock music.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Focus/instrumentalstudy.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Focus/instrumental study.avif" alt="instrumental study">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Instrumental Study
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Instrumental Study
+                                    </h3>
+                                    <p>
+                                        Focus with soft study music in the background.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Focus/focusflow.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Focus/focus flow.avif" alt="focus flow">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Focus Flow
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Focus Flow
+                                    </h3>
+                                    <p>
+                                        Uptempo instrumental hip hop beats.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Focus/workdaylounge.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Focus/workday lounge.avif" alt="workday lounge">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Workday Lounge
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Workday Lounge
+                                    </h3>
+                                    <p>
+                                        Lounge and chill out music for your workday.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="head">
+                        <h2 class="play-name">
+                            <a class="list-name" href="#">
+                                Spotify Playlists
+                            </a>
+                        </h2>
+                        <a class="show" href="#">
+                            Show all
+                        </a>
+                    </div>
+                    <div class="card-flex">
+                        <a href="Spotify Playlist/tophits.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Spotify Playlist/travis scott.avif" alt="travis scott">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Today's Top Hits
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Today's Top Hits
+                                    </h3>
+                                    <p>
+                                        Travis Scott is on top of the Hottest 50!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Spotify Playlist/rapcaviar.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Spotify Playlist/rap caviar.avif" alt="rap caviar">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        All Rap Caviar
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        RapCaviar
+                                    </h3>
+                                    <p>
+                                        New music from A$AP Rocky, Lil Tecca and Travis Scott.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Spotify Playlist/allout.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Spotify Playlist/all out 2010.avif" alt="all out 2010">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        All Out 2010s
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        All Out 2010s
+                                    </h3>
+                                    <p>
+                                        The biggest songs of the 2010s.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Spotify Playlist/rockclassics.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Spotify Playlist/rock classic.avif" alt="rock classic">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Rock Classis
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Rock Classis
+                                    </h3>
+                                    <p>
+                                        Rock legends & epic songs that continue to inspire generations. Cover: Foo Fighters
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Spotify Playlist/chillhits.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Spotify Playlist/chill hits.avif" alt="chill hits">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                    
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Chill Hits
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Chill Hits
+                                    </h3>
+                                    <p>
+                                        Kick back to the best new and recent chill hits.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="head">
+                        <h2 class="play-name">
+                            <a class="list-name" href="#">
+                                Sleep
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="card-flex">
+                        <a href="Sleep/sleep.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sleep/sleepstars.avif" alt="sleepstars">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                    
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sleep
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sleep
+                                    </h3>
+                                    <p>
+                                        Gentle Ambient piano to help you fall asleep.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Sleep/daydreamer.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sleep/daydream.avif" alt="daydream">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Day Dreamer
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Day Dreamer
+                                    </h3>
+                                    <p>
+                                        Drift away with enthralling instrumentals. 
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="sleep" href="#">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/delhi.avif" alt="delhi">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Delhi
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Delhi
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Delhi IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="sleep" href="#">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/bengaluru.avif" alt="bengaluru">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Bengaluru
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Bengaluru
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Bengaluru IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="sleep" href="#">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/cehnnai.avif" alt="chennai">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Chennai
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Chennai
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Chennai IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="head">
+                        <h2 class="play-name">
+                            <a class="list-name" href="#">
+                                Sound of India
+                            </a>
+                        </h2>
+                        <a class="show" href="#">
+                            Show all
+                        </a>
+                    </div>
+                    <div class="card-flex">
+                        <a href="Sound of India/mumbai.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/mumbai.avif" alt="mumbai">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                    
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Mumbai
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Mumbai
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Mumbai IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Sound of India/kolkata.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/kolkata.avif" alt="kolkata">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Kolkata
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Kolkata
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Kolkata IN, according to listening patterns and math. 
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Sound of India/delhi.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/delhi.avif" alt="delhi">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Delhi
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Delhi
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Delhi IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Sound of India/bengaluru.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/bengaluru.avif" alt="bengaluru">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Bengaluru
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Bengaluru
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Bengaluru IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="Sound of India/chennai.html">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="song-img" src="images/Sound of India/cehnnai.avif" alt="chennai">
+                                    
+                                        <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                        </svg>
+                                        
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-spotify" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="tag">
+                                        Sound of Chennai
+                                    </p>
+                                </div>
+                                <div class="card-desc">
+                                    <h3>
+                                        Sound of Chennai
+                                    </h3>
+                                    <p>
+                                        The songs that define, unite and distinguish Chennai IN, according to listening patterns and math.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <div class="bottom-section">
+        <div class="content-flex">
+            <div class="cont">
+                <p class="buy1">
+                    Preview of Spotify
+                </p>
+                <p class="buy2">
+                    Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+                </p>
+            </div>
+            <div class="signup">
+                <a href="signup.html">
+                    Sign up for free
+                </a>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

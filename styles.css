@@ -1,0 +1,1114 @@
+/* This is the common styling for all pages */
+
+
+body{
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+section{
+    display: flex;
+    gap: 15px;
+}
+.fixed-container>div{
+    margin-bottom: 10px;
+}
+.menu{
+    background-color: rgb(18, 18, 18);
+    padding: 4px 20px;
+    width: 300px;
+    border-radius: 12px;
+}
+.menu a{
+    text-decoration: none;
+    color: gray;
+    transition: 0.4s ease;
+}
+.menu a:hover{
+    color: white;
+    fill: white;
+}
+.tags{
+    transition: 0.4s ease;
+}
+.menu a:hover .tags{
+    fill: white;
+}
+.menu .active{
+    text-decoration: none;
+    color: white;
+    fill: white;
+}
+.menu-tags{
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+.menu span{
+    font-size: 20px;
+    
+}
+.library{
+    background-color: rgb(18, 18, 18);
+    padding: 4px 20px 30px;
+    width: 300px;
+    border-radius: 12px;
+
+}
+.library-heading-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+.lib-anch{
+    text-decoration: none;
+}
+.lib-flex{
+    display: flex;
+    align-items: flex-end;
+    gap: 18px;
+}
+.lib{
+    color: gray;
+    transition: 0.4s ease;
+}
+.lib-icon{
+    fill: gray;
+    transition: 0.4s ease;
+}
+.library-heading-flex a:hover .lib{
+    color: white;
+}
+.library-heading-flex a:hover .lib-icon{
+    fill: white;
+}
+.playlist{
+    width: 24px;
+    height: 24px;
+    background-color: rgb(18, 18, 18);
+    border: none;
+    padding: 1px 0;
+    transition: 0.4s ease;
+}
+.playlist:hover{
+    border-radius: 50%;
+    background-color: rgb(42, 42, 42);
+}
+.opt{
+    margin-bottom: 40px;
+}
+.opt1{
+    background-color: rgb(51, 50, 50);
+    color: white;
+    padding: 8px 8px 14px;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.opt1 button{
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 16px;
+    transition: 0.1s ease;
+}
+.opt1 button:hover{
+    font-size: 15px;
+}
+.opt2{
+    background-color: rgb(51, 50, 50);
+    color: white;
+    padding: 8px 8px 14px;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: smaller;
+}
+.opt2 button{
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 16px;
+    transition: 0.1s ease;
+}
+.opt2 button:hover{
+    font-size: 15px;
+}
+.cookies{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: rgb(161, 157, 157);
+    font-size: 10px;
+}
+.cookies:hover{
+    text-decoration: underline;
+}
+.lang{
+    margin-top: 40px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 16px;
+    padding: 6px 16px;
+}
+.lang:hover{
+    border: 3px solid white;
+}
+.lang-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    position: relative;
+}
+
+/* This is the start of absolute positioned navbar */
+
+.navbar-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(33,32,32);
+    background: linear-gradient(90deg, rgba(33,32,32,1) 0%, rgba(19,19,19,1) 14%, rgba(0,0,0,1) 100%);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    position: absolute;
+    width: inherit;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+}
+.nav-btn{
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: not-allowed;
+}
+.deets{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sign{
+    color: gray;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.sign:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.login{
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+.login:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* This is the start of absolute positioned navbar */
+
+
+/* This is the common styling for all pages */
+
+/*  */
+/*  */
+/*  */
+
+/* This is start of card container in main page */
+
+.container{
+    height: 622px;
+    background: rgb(33,32,32);
+    background: linear-gradient(180deg, rgba(33,32,32,1) 0%, rgba(19,19,19,1) 100%, rgba(0,0,0,1) 100%);
+    border-radius: 16px;
+    overflow: auto;
+}
+.card-container{
+    margin-top: 40px;
+    padding: 10px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-name{
+    font-weight: 600;
+}
+.list-name{
+    color: white;
+    text-decoration: none;
+}  
+.show{
+    color: gray;
+    text-decoration: none;
+}
+.head a:hover{
+    text-decoration: underline;
+} 
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sleep{
+    visibility: hidden;
+    cursor: default;
+}
+.card{
+    width: 150px;
+    height: 260px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 16px;
+    transition: 0.4s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.card-body{
+    width: 100%;
+    border-radius: 14px;
+    position: relative;
+}
+.song-img{
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 14px;
+}
+.play-btn{
+    position: absolute;
+    z-index: -999;
+    border-radius: 50%;
+    background-color: rgb(21, 183, 21);
+    padding-left: 2px;
+    bottom: -10%;
+    right: 0;
+    margin: 6px;
+    transition: bottom 0.2s ease;
+    fill: black;
+}
+.card:hover .play-btn{
+    bottom: 0;
+    z-index: 0;
+}
+.card:hover{
+    background-color: rgb(37, 37, 37);
+}
+.icon{
+    position: absolute;
+    top: 0;
+    margin: 4px;
+}
+.tag{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+    font-size: 14px;
+}
+.card-desc{
+    color: white;
+    font-size: smaller;
+    text-overflow: ellipsis;
+}
+.card-desc p{
+    font-size: 15px;
+    color: gray;
+}
+hr{
+    width: 90%;
+    margin: 100px auto;
+    border: 1 solid rgb(0, 0, 0);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+/* This is end of card container in main page */
+
+/*  */
+/*  */
+/*  */
+
+/* This is the start of login page */
+
+
+.body-l{
+    margin: 0;
+    overflow: auto;
+}
+.header-l{
+    width: auto;
+    padding: 0 40px;
+}
+.header-l a{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: default;
+}
+.logo-l{
+    fill: white;
+}
+.header-l h1{
+    display: flex;
+    align-items: center;
+}
+.header-l span{
+    font-size: 8px;
+}
+.main-l{
+    width: 100%;
+    height: 100%;
+    background: rgb(33,32,32);
+    background: linear-gradient(180deg, rgba(33,32,32,1) 0%, rgba(19,19,19,1) 100%, rgba(0,0,0,1) 100%);
+    padding: 40px 0;
+}
+.login-box{
+    width: 750px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 16px;
+}
+.login-box h1{
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.login-type{
+    width: 30%;
+    margin: 10px auto;
+}
+.platform-login{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 6px 16px;
+    transition: 0.2s ease;
+}
+.platform-login:hover{
+    border-color: white;
+}
+.login-type a{
+    color: white;
+}
+.platform{
+    display: flex;
+    justify-content: space-between;
+}
+.method{
+    text-align: center;
+}
+.hr-l{
+    width: 80%;
+    margin: 50px auto;
+    border: 1 solid rgb(0, 0, 0);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: lightgray;
+}
+.login-deets{
+    width: 40%;
+    margin: 10px auto;
+    text-align: left;
+}
+.email input:focus{
+    border-color: white;
+}
+.pass input:focus{
+    border-color: white;
+}
+.email input[type=text]{
+    width: 90%;
+    background-color: black;
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0 10px;
+    margin: 12px auto;
+    color: white;
+    border-radius: 6px;
+}
+.pass{
+    position: relative;
+}
+.pass input[type=password]{
+    width: 90%;
+    background-color: black;
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0 10px;
+    margin: 12px auto;
+    color: white;
+    border-radius: 6px;
+}
+.seen{
+    position: absolute;
+    right: 5%;
+    top: 53%;
+    transition: 0.2s ease;
+}
+.seen:hover{
+    fill: white;
+}
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    fill: rgb(46, 220, 46);
+}
+.log-btn{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    background-color: rgb(46, 220, 46);
+    border-radius: 40px;
+    border: 0;
+    transition: 0.2s ease;
+}
+.log-btn:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+.forgot{
+    text-align: center;
+}
+.forgot a{
+    color: white;
+    text-decoration: underline;
+}
+.forgot a:hover{
+    color: greenyellow;
+}
+.sign-up-link span{
+    color: gray
+}
+.sign-up-link a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* This is the end of login page */
+
+/*  */
+/*  */
+/*  */
+
+/* This is the start of signup page */
+
+.body-s{
+    margin: 0;
+    overflow: auto;
+    background-color: white;
+}
+.sign-sheet{
+    width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+.header-s a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    color: black;
+    fill: black;
+    cursor: default;
+}
+.header-s h1{
+    display: flex;
+    align-items: center;
+}
+.header-s span{
+    font-size: 8px;
+}
+.signup-type{
+    width: 30%;
+    margin: 10px auto;
+}
+.platform-signup{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 6px 16px;
+    transition: 0.2s ease;
+}
+.platform-signup:hover{
+    transform: scale(1.1);
+}
+.face{
+    background-color: rgb(46, 46, 148);
+    
+}
+.face a{
+    color: white;
+}
+.goog a{
+    color: black;
+}
+.goog{
+    border-color: black;
+}
+.platform-s{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.or span{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: gray;
+}
+.hr-s{
+    width: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.hr-s-first{
+    margin-right: 20px;
+}
+.hr-s-second{
+    margin-left: 20px;
+}
+.signup-deets{
+    width: 40%;
+    margin: 10px auto;
+    text-align: left;
+    font-weight: bolder;
+}
+.email-s input[type=text]{
+    width: 90%;
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0 10px;
+    margin: 12px auto 0;
+    color: gray;
+    border-radius: 6px;
+}
+.email-s a{
+    color: green;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.pass-s{
+    position: relative;
+}
+.pass-s input[type=password]{
+    width: 90%;
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0 10px;
+    margin: 12px auto;
+    color: gray;
+    border-radius: 6px;
+}
+.seen-s{
+    position: absolute;
+    right: 5%;
+    top: 53%;
+    transition: 0.2s ease;
+}
+.seen-s:hover{
+    fill: black;
+}
+.profile-s input[type=text]{
+    width: 90%;
+    border: 1px solid gray;
+    height: 40px;
+    padding: 0 10px;
+    margin: 12px auto 0;
+    color: gray;
+    border-radius: 6px;
+}
+.profile-s span{
+    font-size: 12px;
+    font-weight: bolder;
+}
+.dob{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 30px;
+}
+.year{
+    font-weight: lighter;
+}
+.year input{
+    width: 45px;
+    height: 35px;
+}
+.month{
+    font-weight: lighter;
+}
+.month select{
+    height: 40px;
+}
+.day{
+    margin-right: 50px;
+    font-weight: lighter;
+}
+.day input{
+    width: 25px;
+    height: 35px;
+}
+.gender{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.gender label{
+    font-weight: lighter;
+}
+.subscription{
+    margin-top: 30px;
+}
+.subscription p{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.terms{
+    text-align: center;
+    font-size: 9px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.terms p{
+    margin: 0;
+}
+.terms a{
+    color: green;
+    text-decoration: underline;
+}
+.terms a:hover{
+    color: rgb(155, 232, 129);
+}
+.signup-btn{
+    text-align: center;
+}
+.signup-btn button{
+    font-size: 26px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgb(46, 220, 46);
+    border: 0;
+    transition: 0.2s ease;
+}
+.signup-btn button:hover{
+    transform: scale(1.1);
+    background-color: rgb(120, 244, 120);
+}
+.login-link{
+    text-align: center;
+}
+.login-link a{
+    color: rgb(120, 244, 120);
+    text-decoration: underline;
+}
+
+
+
+
+/* This is the end of signup page */
+
+/*  */
+/*  */
+/*  */
+
+/* This is the start of container in the playlists page */
+
+.container-p{
+    height: 622px;
+    background: rgb(97,143,144);
+    background: linear-gradient(180deg, rgba(97,143,144,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 16px;
+    overflow: auto;
+    color: white;
+    padding: 10px;
+}
+.heading-p-flex{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.playlist-img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+.playlist-img-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* the logo and the text are taken from the already existing code */
+.first{
+    margin-bottom: 0;
+}
+.second{
+    font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.third{
+    color: gray;
+}
+.fourth{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.fourth img{
+    mix-blend-mode: color-dodge;
+    height: 30px;
+    width: 30px;
+}
+.company{
+    color: white;
+    text-decoration: none;
+}
+.company:hover{
+    text-decoration: underline;
+}
+.symbols-p-flex{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.play-btn-p{
+    border-radius: 50%;
+    background-color: rgb(21, 183, 21);
+    padding-left: 2px;
+    fill: black;
+    transition: 0.4s ease;
+}
+.play-btn-p:hover{
+    transform: scale(1.1);
+    background-color: rgb(61, 216, 61);
+}
+.heart-icon-p{
+    fill: gray;
+    transition: 0.1s ease;
+}
+.heart-icon-p:hover{
+    fill: white;
+    transform: scale(1.1);
+}
+.options-icon-p{
+    fill: gray;
+    transition: 0.1s ease;
+}
+.options-icon-p:hover{
+    fill: white;
+    transform: scale(1.1);
+}
+
+/* This is the start list of songs */
+
+.song-list{
+    width: 100%;
+    color: gray;
+    fill: gray;
+    border-collapse: collapse;
+}
+th{
+    color: gray;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.title{
+    text-align: left;
+    width: 450px;
+}
+.album{
+    text-align: left;
+    width: 300px;
+}
+.song-list-list:hover{
+    background-color: rgb(70, 68, 68);
+}
+.song-list-list:hover .artist-name{
+    color: white;
+}
+.song-list-list:hover .album-name-name{
+    color: white;
+}
+.song-list-list:hover .number{
+    display: none;
+}
+.song-list-list:hover .play-btn-song-list{
+    display: unset;
+}
+.play-btn-song-list{
+    display: none;
+}
+.song-list-list td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.song-list-list a:hover{
+    text-decoration: underline;
+}
+.album-name{
+    color: white;
+    font-size: 15px;
+}
+.artist-name{
+    color: gray;
+    font-size: smaller;
+}
+.album-name-name{
+    color: gray;
+    font-size: smaller;
+}
+.time{
+    font-size: smaller;
+}
+.song-time-flex{
+    font-size: smaller;
+    display: flex;
+    justify-content: space-evenly;
+}
+.svg-unset{
+    visibility: hidden;
+}
+.song-list-list:hover .svg-unset{
+    visibility: visible;
+}
+.svg-unset:hover{
+    fill: white;
+}
+.td-flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.td-song-img{
+    height: 40px;
+    width: 40px;
+}
+.td-flex p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* This is the end of list of songs */
+
+/* This is the end of container in the playlists page */
+
+/*  */
+/*  */
+/*  */
+
+/* This is the start of  bottom section */
+
+.bottom-section{
+    /* height: 100%;
+    width: 100%; */
+    background: rgb(252,70,107);
+    background: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+}
+.content-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 18px;
+}
+.cont{
+    padding-bottom: 16px;
+}
+.buy1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.buy2{
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.signup{
+    border-radius: 18px;
+    padding: 4px 16px;
+    background-color: white;
+    font-size: larger;
+    font-weight: 600;
+    transition: 0.1s ease;
+}
+.signup a{
+    color: black;
+}
+.signup:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+/* This is the end of bottom section */
+
+/*  */
+/*  */
+/*  */
+
+/* This is start of smaller screens */
+
+.small{
+    display: none;
+}
+.small-unset{
+    display: none;
+}
+.logo{
+    width: 50px;
+    mix-blend-mode: color-dodge;
+    
+}
+.app-link{
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+.app-link:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.app-link a{
+    text-decoration: none;
+    color: black;
+}
+
+/* This is end of smaller screens */
+
+/*  */
+/*  */
+/*  */
+
+/* Media Querries start here*/
+
+/* Media Querries for Cover Page starts here */
+
+@media (max-width: 586px){
+    .fixed-container, .nav, .deets{
+        display: none;
+    }
+    .small{
+        display: unset;
+    }
+    .small-unset{
+        display: unset;
+    }
+    .small-flex{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+    .card{
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Querries for Cover Page ends here */
+
+/*  */
+/*  */
+/*  */
+
+/* Media Querries for the Log In page starts here */
+
+@media (max-width: 586px){
+    
+    .small-screen-body{
+        background-color: black;
+    }
+    .small-screen-head{
+        width: 100%;
+    }
+    .small-main{
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .small-login-box{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .small-screen-head{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
+
+/* Media Querries for the Log In page starts here */
+
+/*  */
+/*  */
+/*  */
+
+/* Media Querries for the Sign Up page starts here */
+
+@media (max-width: 586px){
+    .small-sign-sheet{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* Media Querries for the Sign Up page starts here */
+
+/*  */
+/*  */
+/*  */
+
+/* Media Querries for the playlists page starts here */
+
+
+
+/* Media Querries for the playlists page starts here */
+
+/* Media Querries start here*/
+
+
+
+
+
+
+
